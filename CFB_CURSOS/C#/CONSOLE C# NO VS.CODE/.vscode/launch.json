@@ -1,0 +1,48 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb-mi",
+            "request": "launch",
+            "name": "Launch Program (SSH + X11)",
+            "target": "./bin/executable",
+            "cwd": "${workspaceRoot}",
+            "ssh": {
+                "host": "127.0.0.1",
+                "cwd": "/home/remote_user/project/",
+                "keyfile": "/home/my_user/.ssh/id_rsa",
+                "user": "remote_user",
+                "forwardX11": true,
+                "x11host": "localhost",
+                "x11port": 6000
+            },
+            "valuesFormatting": "parseText"
+        },
+
+        {
+            "cwd": "${workspaceRoot}",
+            "executable": "./bin/executable.elf",
+            "name": "Debug Microcontroller",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd"
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:pickRemoteProcess}",
+            "pipeTransport": {
+                "pipeCwd": "${workspaceFolder}",
+                "pipeProgram": "enter the fully qualified path for the pipe program name, for example '/usr/bin/ssh'",
+                "pipeArgs": [],
+                "debuggerPath": "enter the path for the debugger on the target machine, for example ~/vsdbg/vsdbg"
+            }
+        }
+
+
+    ]
+}

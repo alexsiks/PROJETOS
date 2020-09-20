@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MM:Instances xmlns:MM="http://schemas.microsoft.com/sqlserver/ManagementModel/Serialization/2010/11" xmlns:RE="http://schemas.microsoft.com/sqlserver/RelationalEngine/Serialization/2010/11">
+    <RE:Database MM:Key="/Database[CONTAS]">
+        <RE:Collation>
+            <RE:Name>Latin1_General_CI_AS</RE:Name>
+        </RE:Collation>
+        <RE:CompatibilityLevel>Version100</RE:CompatibilityLevel>
+        <RE:Name>CONTAS</RE:Name>
+    </RE:Database>
+    <RE:Schema MM:Key="/Database[CONTAS]/Schema[dbo]">
+        <RE:Parent MM:ReferenceKey="/Database[CONTAS]" />
+        <RE:Name>dbo</RE:Name>
+        <RE:Owner MM:ReferenceKey="/Database[CONTAS]/User[dbo]" />
+    </RE:Schema>
+    <RE:Table MM:Key="/Database[CONTAS]/Schema[dbo]/Table[CONTA]">
+        <RE:Parent MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]" />
+        <RE:Columns>
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/Column[idCONTA]" />
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/Column[idPESSOA]" />
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/Column[idEMPRESA]" />
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/Column[PERIODO]" />
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/Column[VENCIMENTO]" />
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/Column[VALOR]" />
+        </RE:Columns>
+        <RE:IsQuotedIdentifierOn>True</RE:IsQuotedIdentifierOn>
+        <RE:Name>CONTA</RE:Name>
+    </RE:Table>
+    <RE:Table MM:Key="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]">
+        <RE:Parent MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]" />
+        <RE:Columns>
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]/Column[idEMPRESA]" />
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]/Column[idPESSOA]" />
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]/Column[NOME]" />
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]/Column[COMENTARIO]" />
+        </RE:Columns>
+        <RE:IsQuotedIdentifierOn>True</RE:IsQuotedIdentifierOn>
+        <RE:Name>EMPRESA</RE:Name>
+    </RE:Table>
+    <RE:Table MM:Key="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]">
+        <RE:Parent MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]" />
+        <RE:Columns>
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]/Column[idPAGAMENTO]" />
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]/Column[idEMPRESA]" />
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]/Column[idCONTA]" />
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]/Column[DATAPAGAMENTO]" />
+        </RE:Columns>
+        <RE:IsQuotedIdentifierOn>True</RE:IsQuotedIdentifierOn>
+        <RE:Name>PAGAMENTO</RE:Name>
+    </RE:Table>
+    <RE:Table MM:Key="/Database[CONTAS]/Schema[dbo]/Table[PESSOA]">
+        <RE:Parent MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]" />
+        <RE:Columns>
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PESSOA]/Column[idPESSOA]" />
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PESSOA]/Column[NOME]" />
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PESSOA]/Column[SOBRENOME]" />
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PESSOA]/Column[SEXO]" />
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PESSOA]/Column[DATANASCIMENTO]" />
+        </RE:Columns>
+        <RE:IsQuotedIdentifierOn>True</RE:IsQuotedIdentifierOn>
+        <RE:Name>PESSOA</RE:Name>
+    </RE:Table>
+    <RE:Column MM:Key="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/Column[idCONTA]">
+        <RE:Collation>
+            <RE:Name>Latin1_General_CI_AS</RE:Name>
+        </RE:Collation>
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>1</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>VarChar</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>idCONTA</RE:Name>
+        <RE:Nullable>False</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/Column[idPESSOA]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>idPESSOA</RE:Name>
+        <RE:Nullable>False</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/Column[idEMPRESA]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>idEMPRESA</RE:Name>
+        <RE:Nullable>False</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/Column[PERIODO]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Date</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>PERIODO</RE:Name>
+        <RE:Nullable>False</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/Column[VENCIMENTO]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Date</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>VENCIMENTO</RE:Name>
+        <RE:Nullable>False</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/Column[VALOR]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Money</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>VALOR</RE:Name>
+        <RE:Nullable>False</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:ForeignKeyConstraint MM:Key="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/ForeignKeyConstraint[FK__CONTA__EMPRESA_i__09DE7BCC]">
+        <RE:Parent MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[CONTA]" />
+        <RE:Columns>
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/ForeignKeyConstraint[FK__CONTA__EMPRESA_i__09DE7BCC]/ForeignKeyColumn[idEMPRESA]" />
+        </RE:Columns>
+        <RE:DeleteAction>NoAction</RE:DeleteAction>
+        <RE:IsChecked>True</RE:IsChecked>
+        <RE:IsEnabled>True</RE:IsEnabled>
+        <RE:Name>FK__CONTA__EMPRESA_i__09DE7BCC</RE:Name>
+        <RE:NotForReplication>False</RE:NotForReplication>
+        <RE:ReferencedTable MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]" />
+        <RE:UpdateAction>NoAction</RE:UpdateAction>
+    </RE:ForeignKeyConstraint>
+    <RE:ForeignKeyConstraint MM:Key="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/ForeignKeyConstraint[FK__CONTA__PESSOA_id__0AD2A005]">
+        <RE:Parent MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[CONTA]" />
+        <RE:Columns>
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/ForeignKeyConstraint[FK__CONTA__PESSOA_id__0AD2A005]/ForeignKeyColumn[idPESSOA]" />
+        </RE:Columns>
+        <RE:DeleteAction>NoAction</RE:DeleteAction>
+        <RE:IsChecked>True</RE:IsChecked>
+        <RE:IsEnabled>True</RE:IsEnabled>
+        <RE:Name>FK__CONTA__PESSOA_id__0AD2A005</RE:Name>
+        <RE:NotForReplication>False</RE:NotForReplication>
+        <RE:ReferencedTable MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PESSOA]" />
+        <RE:UpdateAction>NoAction</RE:UpdateAction>
+    </RE:ForeignKeyConstraint>
+    <RE:PrimaryKeyConstraint MM:Key="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/PrimaryKeyConstraint[PK__CONTA__ADC6036907F6335A]">
+        <RE:Parent MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[CONTA]" />
+        <RE:AssociatedIndex MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/RelationalIndex[PK__CONTA__ADC6036907F6335A]" />
+        <RE:Name>PK__CONTA__ADC6036907F6335A</RE:Name>
+    </RE:PrimaryKeyConstraint>
+    <RE:Column MM:Key="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]/Column[idEMPRESA]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IdentityColumnInfo>
+            <RE:Seed>1</RE:Seed>
+            <RE:Increment>1</RE:Increment>
+            <RE:NotForReplication>false</RE:NotForReplication>
+        </RE:IdentityColumnInfo>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>idEMPRESA</RE:Name>
+        <RE:Nullable>False</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]/Column[idPESSOA]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>idPESSOA</RE:Name>
+        <RE:Nullable>False</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]/Column[NOME]">
+        <RE:Collation>
+            <RE:Name>Latin1_General_CI_AS</RE:Name>
+        </RE:Collation>
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>100</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>VarChar</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>NOME</RE:Name>
+        <RE:Nullable>False</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]/Column[COMENTARIO]">
+        <RE:Collation>
+            <RE:Name>Latin1_General_CI_AS</RE:Name>
+        </RE:Collation>
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>1</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>VarChar</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>COMENTARIO</RE:Name>
+        <RE:Nullable>False</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:ForeignKeyConstraint MM:Key="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]/ForeignKeyConstraint[FK__EMPRESA__PESSOA___0519C6AF]">
+        <RE:Parent MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]" />
+        <RE:Columns>
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]/ForeignKeyConstraint[FK__EMPRESA__PESSOA___0519C6AF]/ForeignKeyColumn[idPESSOA]" />
+        </RE:Columns>
+        <RE:DeleteAction>NoAction</RE:DeleteAction>
+        <RE:IsChecked>True</RE:IsChecked>
+        <RE:IsEnabled>True</RE:IsEnabled>
+        <RE:Name>FK__EMPRESA__PESSOA___0519C6AF</RE:Name>
+        <RE:NotForReplication>False</RE:NotForReplication>
+        <RE:ReferencedTable MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PESSOA]" />
+        <RE:UpdateAction>NoAction</RE:UpdateAction>
+    </RE:ForeignKeyConstraint>
+    <RE:PrimaryKeyConstraint MM:Key="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]/PrimaryKeyConstraint[PK__EMPRESA__E984CA8F03317E3D]">
+        <RE:Parent MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]" />
+        <RE:AssociatedIndex MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]/RelationalIndex[PK__EMPRESA__E984CA8F03317E3D]" />
+        <RE:Name>PK__EMPRESA__E984CA8F03317E3D</RE:Name>
+    </RE:PrimaryKeyConstraint>
+    <RE:Column MM:Key="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]/Column[idPAGAMENTO]">
+        <RE:Collation>
+            <RE:Name>Latin1_General_CI_AS</RE:Name>
+        </RE:Collation>
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>50</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>VarChar</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>idPAGAMENTO</RE:Name>
+        <RE:Nullable>False</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]/Column[idEMPRESA]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>idEMPRESA</RE:Name>
+        <RE:Nullable>False</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]/Column[idCONTA]">
+        <RE:Collation>
+            <RE:Name>Latin1_General_CI_AS</RE:Name>
+        </RE:Collation>
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>1</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>VarChar</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>idCONTA</RE:Name>
+        <RE:Nullable>False</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]/Column[DATAPAGAMENTO]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>DateTime</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>DATAPAGAMENTO</RE:Name>
+        <RE:Nullable>False</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:ForeignKeyConstraint MM:Key="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]/ForeignKeyConstraint[FK__PAGAMENTO__CONTA__0F975522]">
+        <RE:Parent MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]" />
+        <RE:Columns>
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]/ForeignKeyConstraint[FK__PAGAMENTO__CONTA__0F975522]/ForeignKeyColumn[idCONTA]" />
+        </RE:Columns>
+        <RE:DeleteAction>NoAction</RE:DeleteAction>
+        <RE:IsChecked>True</RE:IsChecked>
+        <RE:IsEnabled>True</RE:IsEnabled>
+        <RE:Name>FK__PAGAMENTO__CONTA__0F975522</RE:Name>
+        <RE:NotForReplication>False</RE:NotForReplication>
+        <RE:ReferencedTable MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[CONTA]" />
+        <RE:UpdateAction>NoAction</RE:UpdateAction>
+    </RE:ForeignKeyConstraint>
+    <RE:ForeignKeyConstraint MM:Key="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]/ForeignKeyConstraint[FK__PAGAMENTO__EMPRE__108B795B]">
+        <RE:Parent MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]" />
+        <RE:Columns>
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]/ForeignKeyConstraint[FK__PAGAMENTO__EMPRE__108B795B]/ForeignKeyColumn[idEMPRESA]" />
+        </RE:Columns>
+        <RE:DeleteAction>NoAction</RE:DeleteAction>
+        <RE:IsChecked>True</RE:IsChecked>
+        <RE:IsEnabled>True</RE:IsEnabled>
+        <RE:Name>FK__PAGAMENTO__EMPRE__108B795B</RE:Name>
+        <RE:NotForReplication>False</RE:NotForReplication>
+        <RE:ReferencedTable MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]" />
+        <RE:UpdateAction>NoAction</RE:UpdateAction>
+    </RE:ForeignKeyConstraint>
+    <RE:PrimaryKeyConstraint MM:Key="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]/PrimaryKeyConstraint[PK__PAGAMENT__EAC5A53E0DAF0CB0]">
+        <RE:Parent MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]" />
+        <RE:AssociatedIndex MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]/RelationalIndex[PK__PAGAMENT__EAC5A53E0DAF0CB0]" />
+        <RE:Name>PK__PAGAMENT__EAC5A53E0DAF0CB0</RE:Name>
+    </RE:PrimaryKeyConstraint>
+    <RE:Column MM:Key="/Database[CONTAS]/Schema[dbo]/Table[PESSOA]/Column[idPESSOA]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Int</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IdentityColumnInfo>
+            <RE:Seed>1</RE:Seed>
+            <RE:Increment>1</RE:Increment>
+            <RE:NotForReplication>false</RE:NotForReplication>
+        </RE:IdentityColumnInfo>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>idPESSOA</RE:Name>
+        <RE:Nullable>False</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[CONTAS]/Schema[dbo]/Table[PESSOA]/Column[NOME]">
+        <RE:Collation>
+            <RE:Name>Latin1_General_CI_AS</RE:Name>
+        </RE:Collation>
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>20</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>VarChar</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>NOME</RE:Name>
+        <RE:Nullable>False</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[CONTAS]/Schema[dbo]/Table[PESSOA]/Column[SOBRENOME]">
+        <RE:Collation>
+            <RE:Name>Latin1_General_CI_AS</RE:Name>
+        </RE:Collation>
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>100</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>VarChar</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>SOBRENOME</RE:Name>
+        <RE:Nullable>False</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[CONTAS]/Schema[dbo]/Table[PESSOA]/Column[SEXO]">
+        <RE:Collation>
+            <RE:Name>Latin1_General_CI_AS</RE:Name>
+        </RE:Collation>
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>1</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Char</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>SEXO</RE:Name>
+        <RE:Nullable>False</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:Column MM:Key="/Database[CONTAS]/Schema[dbo]/Table[PESSOA]/Column[DATANASCIMENTO]">
+        <RE:DataType>
+            <RE:SystemDataType>
+                <RE:Length>0</RE:Length>
+                <RE:NumericPrecision>0</RE:NumericPrecision>
+                <RE:NumericScale>0</RE:NumericScale>
+                <RE:TypeSpec>Date</RE:TypeSpec>
+            </RE:SystemDataType>
+        </RE:DataType>
+        <RE:IsColumnSet>False</RE:IsColumnSet>
+        <RE:IsSparse>False</RE:IsSparse>
+        <RE:Name>DATANASCIMENTO</RE:Name>
+        <RE:Nullable>False</RE:Nullable>
+        <RE:RowGuidCol>False</RE:RowGuidCol>
+    </RE:Column>
+    <RE:PrimaryKeyConstraint MM:Key="/Database[CONTAS]/Schema[dbo]/Table[PESSOA]/PrimaryKeyConstraint[PK__PESSOA__5C1FD06C7F60ED59]">
+        <RE:Parent MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PESSOA]" />
+        <RE:AssociatedIndex MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PESSOA]/RelationalIndex[PK__PESSOA__5C1FD06C7F60ED59]" />
+        <RE:Name>PK__PESSOA__5C1FD06C7F60ED59</RE:Name>
+    </RE:PrimaryKeyConstraint>
+    <RE:ForeignKeyColumn MM:Key="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/ForeignKeyConstraint[FK__CONTA__EMPRESA_i__09DE7BCC]/ForeignKeyColumn[idEMPRESA]">
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]/Column[idEMPRESA]" />
+        <RE:ReferencingColumn MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/Column[idEMPRESA]" />
+    </RE:ForeignKeyColumn>
+    <RE:ForeignKeyColumn MM:Key="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/ForeignKeyConstraint[FK__CONTA__PESSOA_id__0AD2A005]/ForeignKeyColumn[idPESSOA]">
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PESSOA]/Column[idPESSOA]" />
+        <RE:ReferencingColumn MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/Column[idPESSOA]" />
+    </RE:ForeignKeyColumn>
+    <RE:ForeignKeyColumn MM:Key="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]/ForeignKeyConstraint[FK__EMPRESA__PESSOA___0519C6AF]/ForeignKeyColumn[idPESSOA]">
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PESSOA]/Column[idPESSOA]" />
+        <RE:ReferencingColumn MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]/Column[idPESSOA]" />
+    </RE:ForeignKeyColumn>
+    <RE:ForeignKeyColumn MM:Key="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]/ForeignKeyConstraint[FK__PAGAMENTO__CONTA__0F975522]/ForeignKeyColumn[idCONTA]">
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/Column[idCONTA]" />
+        <RE:ReferencingColumn MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]/Column[idCONTA]" />
+    </RE:ForeignKeyColumn>
+    <RE:ForeignKeyColumn MM:Key="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]/ForeignKeyConstraint[FK__PAGAMENTO__EMPRE__108B795B]/ForeignKeyColumn[idEMPRESA]">
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]/Column[idEMPRESA]" />
+        <RE:ReferencingColumn MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]/Column[idEMPRESA]" />
+    </RE:ForeignKeyColumn>
+</MM:Instances>

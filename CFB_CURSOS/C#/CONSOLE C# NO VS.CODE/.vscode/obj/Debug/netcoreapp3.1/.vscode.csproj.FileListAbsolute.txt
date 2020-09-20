@@ -1,0 +1,13 @@
+C:\Users\JOGOS\Google Drive\MATERIAS E PERIODOS\CFB_CURSOS\C#\CONSOLE C# NO VS.CODE\.vscode\bin\Debug\netcoreapp3.1\.vscode.exe
+C:\Users\JOGOS\Google Drive\MATERIAS E PERIODOS\CFB_CURSOS\C#\CONSOLE C# NO VS.CODE\.vscode\bin\Debug\netcoreapp3.1\.vscode.deps.json
+C:\Users\JOGOS\Google Drive\MATERIAS E PERIODOS\CFB_CURSOS\C#\CONSOLE C# NO VS.CODE\.vscode\bin\Debug\netcoreapp3.1\.vscode.runtimeconfig.json
+C:\Users\JOGOS\Google Drive\MATERIAS E PERIODOS\CFB_CURSOS\C#\CONSOLE C# NO VS.CODE\.vscode\bin\Debug\netcoreapp3.1\.vscode.runtimeconfig.dev.json
+C:\Users\JOGOS\Google Drive\MATERIAS E PERIODOS\CFB_CURSOS\C#\CONSOLE C# NO VS.CODE\.vscode\bin\Debug\netcoreapp3.1\.vscode.dll
+C:\Users\JOGOS\Google Drive\MATERIAS E PERIODOS\CFB_CURSOS\C#\CONSOLE C# NO VS.CODE\.vscode\bin\Debug\netcoreapp3.1\.vscode.pdb
+C:\Users\JOGOS\Google Drive\MATERIAS E PERIODOS\CFB_CURSOS\C#\CONSOLE C# NO VS.CODE\.vscode\obj\Debug\netcoreapp3.1\.vscode.csprojAssemblyReference.cache
+C:\Users\JOGOS\Google Drive\MATERIAS E PERIODOS\CFB_CURSOS\C#\CONSOLE C# NO VS.CODE\.vscode\obj\Debug\netcoreapp3.1\.vscode.csproj.CoreCompileInputs.cache
+C:\Users\JOGOS\Google Drive\MATERIAS E PERIODOS\CFB_CURSOS\C#\CONSOLE C# NO VS.CODE\.vscode\obj\Debug\netcoreapp3.1\.vscode.AssemblyInfoInputs.cache
+C:\Users\JOGOS\Google Drive\MATERIAS E PERIODOS\CFB_CURSOS\C#\CONSOLE C# NO VS.CODE\.vscode\obj\Debug\netcoreapp3.1\.vscode.AssemblyInfo.cs
+C:\Users\JOGOS\Google Drive\MATERIAS E PERIODOS\CFB_CURSOS\C#\CONSOLE C# NO VS.CODE\.vscode\obj\Debug\netcoreapp3.1\.vscode.dll
+C:\Users\JOGOS\Google Drive\MATERIAS E PERIODOS\CFB_CURSOS\C#\CONSOLE C# NO VS.CODE\.vscode\obj\Debug\netcoreapp3.1\.vscode.pdb
+C:\Users\JOGOS\Google Drive\MATERIAS E PERIODOS\CFB_CURSOS\C#\CONSOLE C# NO VS.CODE\.vscode\obj\Debug\netcoreapp3.1\.vscode.genruntimeconfig.cache

@@ -1,0 +1,17 @@
+SELECT        P.NOME + ',' + P.SOBRENOME AS [NOME COMPLETO ], P.SEXO, E.NOME AS CREDOR, TIPOCREDOR AS [TIPO DE CREDOR ], C.idCONTA, C.VALOR, C.VENCIMENTO, 
+                         PG.idCONTA AS [CONTAS PAGAS]
+FROM            PESSOA AS P LEFT OUTER JOIN
+                         CONTA AS C ON C.idPESSOA = P.idPESSOA LEFT OUTER JOIN
+                         EMPRESA AS E ON E.idEMPRESA = C.idEMPRESA LEFT OUTER JOIN
+                         PAGAMENTO AS PG ON PG.idCONTA = C.idCONTA
+
+----------------------------------------------------------------
+
+
+SELECT        P.NOME + ',' + P.SOBRENOME AS [NOME COMPLETO ], P.SEXO, E.NOME AS CREDOR, E.TIPOCREDOR AS [TIPO DE CREDOR ], C.idCONTA, C.VALOR, 
+                         C.VENCIMENTO, PG.idCONTA AS [CONTAS PAGAS]
+FROM            PESSOA AS P LEFT OUTER JOIN
+                         CONTA AS C ON C.idPESSOA = P.idPESSOA LEFT OUTER JOIN
+                         EMPRESA AS E ON E.idEMPRESA = C.idEMPRESA LEFT OUTER JOIN
+                         PAGAMENTO AS PG ON PG.idCONTA = C.idCONTA
+WHERE        (P.idPESSOA = )

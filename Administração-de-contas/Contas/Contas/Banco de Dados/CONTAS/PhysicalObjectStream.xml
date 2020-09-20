@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MM:Instances xmlns:MM="http://schemas.microsoft.com/sqlserver/ManagementModel/Serialization/2010/11" xmlns:RE="http://schemas.microsoft.com/sqlserver/RelationalEngine/Serialization/2010/11">
+    <RE:RelationalIndex MM:Key="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/RelationalIndex[PK__CONTA__ADC6036907F6335A]">
+        <RE:Parent MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[CONTA]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexKey MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/PrimaryKeyConstraint[PK__CONTA__ADC6036907F6335A]" />
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/RelationalIndex[PK__CONTA__ADC6036907F6335A]/IndexedColumn[idCONTA]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>True</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>True</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>PK__CONTA__ADC6036907F6335A</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:RelationalIndex MM:Key="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/RelationalIndex[IFK_PERTENCE]">
+        <RE:Parent MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[CONTA]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/RelationalIndex[IFK_PERTENCE]/IndexedColumn[idEMPRESA]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>False</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>False</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>IFK_PERTENCE</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:RelationalIndex MM:Key="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/RelationalIndex[IFK_POSSUI]">
+        <RE:Parent MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[CONTA]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/RelationalIndex[IFK_POSSUI]/IndexedColumn[idPESSOA]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>False</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>False</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>IFK_POSSUI</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:RelationalIndex MM:Key="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]/RelationalIndex[PK__EMPRESA__E984CA8F03317E3D]">
+        <RE:Parent MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexKey MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]/PrimaryKeyConstraint[PK__EMPRESA__E984CA8F03317E3D]" />
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]/RelationalIndex[PK__EMPRESA__E984CA8F03317E3D]/IndexedColumn[idEMPRESA]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>True</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>True</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>PK__EMPRESA__E984CA8F03317E3D</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:RelationalIndex MM:Key="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]/RelationalIndex[IFK_PERTENCE]">
+        <RE:Parent MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]/RelationalIndex[IFK_PERTENCE]/IndexedColumn[idPESSOA]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>False</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>False</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>IFK_PERTENCE</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:RelationalIndex MM:Key="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]/RelationalIndex[PK__PAGAMENT__EAC5A53E0DAF0CB0]">
+        <RE:Parent MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexKey MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]/PrimaryKeyConstraint[PK__PAGAMENT__EAC5A53E0DAF0CB0]" />
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]/RelationalIndex[PK__PAGAMENT__EAC5A53E0DAF0CB0]/IndexedColumn[idPAGAMENTO]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>True</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>True</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>PK__PAGAMENT__EAC5A53E0DAF0CB0</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:RelationalIndex MM:Key="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]/RelationalIndex[IFK_NECESSITA]">
+        <RE:Parent MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]/RelationalIndex[IFK_NECESSITA]/IndexedColumn[idCONTA]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>False</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>False</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>IFK_NECESSITA</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:RelationalIndex MM:Key="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]/RelationalIndex[IFK_POSSUI]">
+        <RE:Parent MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]/RelationalIndex[IFK_POSSUI]/IndexedColumn[idEMPRESA]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>False</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>False</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>IFK_POSSUI</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:RelationalIndex MM:Key="/Database[CONTAS]/Schema[dbo]/Table[PESSOA]/RelationalIndex[PK__PESSOA__5C1FD06C7F60ED59]">
+        <RE:Parent MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PESSOA]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexKey MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PESSOA]/PrimaryKeyConstraint[PK__PESSOA__5C1FD06C7F60ED59]" />
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PESSOA]/RelationalIndex[PK__PESSOA__5C1FD06C7F60ED59]/IndexedColumn[idPESSOA]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>True</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>True</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>PK__PESSOA__5C1FD06C7F60ED59</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:IndexedColumn MM:Key="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/RelationalIndex[PK__CONTA__ADC6036907F6335A]/IndexedColumn[idCONTA]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/Column[idCONTA]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/RelationalIndex[IFK_PERTENCE]/IndexedColumn[idEMPRESA]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/Column[idEMPRESA]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/RelationalIndex[IFK_POSSUI]/IndexedColumn[idPESSOA]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[CONTA]/Column[idPESSOA]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]/RelationalIndex[PK__EMPRESA__E984CA8F03317E3D]/IndexedColumn[idEMPRESA]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]/Column[idEMPRESA]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]/RelationalIndex[IFK_PERTENCE]/IndexedColumn[idPESSOA]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[EMPRESA]/Column[idPESSOA]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]/RelationalIndex[PK__PAGAMENT__EAC5A53E0DAF0CB0]/IndexedColumn[idPAGAMENTO]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]/Column[idPAGAMENTO]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]/RelationalIndex[IFK_NECESSITA]/IndexedColumn[idCONTA]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]/Column[idCONTA]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]/RelationalIndex[IFK_POSSUI]/IndexedColumn[idEMPRESA]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PAGAMENTO]/Column[idEMPRESA]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[CONTAS]/Schema[dbo]/Table[PESSOA]/RelationalIndex[PK__PESSOA__5C1FD06C7F60ED59]/IndexedColumn[idPESSOA]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[CONTAS]/Schema[dbo]/Table[PESSOA]/Column[idPESSOA]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:Login MM:Key="/Login[Dell-PC\JOGOS]">
+        <RE:Language>Português (Brasil)</RE:Language>
+        <RE:LoginType>Windows</RE:LoginType>
+        <RE:Name>Dell-PC\JOGOS</RE:Name>
+    </RE:Login>
+</MM:Instances>

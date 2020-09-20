@@ -1,0 +1,10 @@
+C:\Users\JOGOS\Google Drive\MATERIAS E PERIODOS\CFB_CURSOS\C#\WINDOWS FORM\WindowsForms\WindowsForms\bin\Debug\WindowsForms.exe.config
+C:\Users\JOGOS\Google Drive\MATERIAS E PERIODOS\CFB_CURSOS\C#\WINDOWS FORM\WindowsForms\WindowsForms\bin\Debug\WindowsForms.exe
+C:\Users\JOGOS\Google Drive\MATERIAS E PERIODOS\CFB_CURSOS\C#\WINDOWS FORM\WindowsForms\WindowsForms\bin\Debug\WindowsForms.pdb
+C:\Users\JOGOS\Google Drive\MATERIAS E PERIODOS\CFB_CURSOS\C#\WINDOWS FORM\WindowsForms\WindowsForms\obj\Debug\WindowsForms.csprojAssemblyReference.cache
+C:\Users\JOGOS\Google Drive\MATERIAS E PERIODOS\CFB_CURSOS\C#\WINDOWS FORM\WindowsForms\WindowsForms\obj\Debug\WindowsForms.FRM_1.resources
+C:\Users\JOGOS\Google Drive\MATERIAS E PERIODOS\CFB_CURSOS\C#\WINDOWS FORM\WindowsForms\WindowsForms\obj\Debug\WindowsForms.Properties.Resources.resources
+C:\Users\JOGOS\Google Drive\MATERIAS E PERIODOS\CFB_CURSOS\C#\WINDOWS FORM\WindowsForms\WindowsForms\obj\Debug\WindowsForms.csproj.GenerateResource.cache
+C:\Users\JOGOS\Google Drive\MATERIAS E PERIODOS\CFB_CURSOS\C#\WINDOWS FORM\WindowsForms\WindowsForms\obj\Debug\WindowsForms.csproj.CoreCompileInputs.cache
+C:\Users\JOGOS\Google Drive\MATERIAS E PERIODOS\CFB_CURSOS\C#\WINDOWS FORM\WindowsForms\WindowsForms\obj\Debug\WindowsForms.exe
+C:\Users\JOGOS\Google Drive\MATERIAS E PERIODOS\CFB_CURSOS\C#\WINDOWS FORM\WindowsForms\WindowsForms\obj\Debug\WindowsForms.pdb
