@@ -1,2 +1,2 @@
 # PROJETOS
-ESTA PASTA E PARA PROJETOS SEJA BEM VINDO
+Esta e uma pasta com algumas praticas minhas, seja bem vindo. 
