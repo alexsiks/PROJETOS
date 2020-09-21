@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!-- Required meta tags --> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- Bootstrap CSS --> <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+    </head>
+    <body>
+            
+            
+            
+        
+        
+        
+        <script>
+            
+            
+            function caucular() {
+            
+
+            
+var Dolar = document.getElementById("campo1").value;
+          
+                      
+  
+var Real= document.getElementById("desc1").value;
+
+
+var RealemDolar = parseFloat(Real)* parseFloat(Dolar);
+
+var  Diferença  = parseFloat(RealemDolar)-parseFloat(Dolar);
+
+
+            
+ document.getElementById("resposta1").innerHTML = (Dolar + " Dolar Equivale a  " + "<h1>"+  RealemDolar + " em Reais "+"</h1>");
+            
+ document.getElementById("valorsub").innerHTML = ( "A Diferença e " + Diferença );
+ 
+}           
+        </script>
+        
+        <body style=" text-align: center; background-color: #9e42b8; color: yellow;" >
+        
+        <form class="interface1">
+            
+            <div class="tpreço">
+        
+        <h1 >
+            Conversão de Moeda
+        </h1>
+        
+            <hr>    
+                
+        </div>
+        
+        
+        <input type="number" id="campo1" placeholder="Digite o Valor do Dolar">
+        
+         <hr>
+        
+      
+        
+        
+        <input type="number" id="desc1" placeholder="Digite o Valor em Reais" >
+        
+         <hr>
+            
+          
+        
+        </form>
+            
+            
+            <button style="background-color: blue; color: white ;" type="button" class="btn btn-warning"  id="botao1" onclick="caucular()" >Caucular</button>
+        
+      
+        
+        
+        
+           <form class="interface1">
+        <hr>
+        
+        <div class="vsubtraido" id="valorsub">
+               
+               <h1> ...</h1>              
+            </div>
+            
+        
+        <hr>
+            
+         <div class="campoderesp1"> 
+             
+      <div id="resposta1" class="alert alert-warning" role="alert"> A simple warning alert—check it out! </div>
+        
+        </div>
+        
+        
+            
+                       
+               
+               
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+               
+               
+        
+        </form>
+        
+    </body>
+</html>
