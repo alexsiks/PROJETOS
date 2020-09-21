@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!-- Required meta tags --> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- Bootstrap CSS --> <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+    </head>
+    <body>
+            
+            
+            
+        
+        
+        
+        <script>
+            
+     
+        
+            
+            function caucular() {
+            
+      
+
+            
+
+            
+var informaçao = document.getElementById("campo1").value;
+          
+                      
+  
+var desconto = document.getElementById("desc1").value;
+
+
+
+var preçofinal = parseFloat(informaçao)-parseFloat(informaçao*desconto)/100;
+
+var  valorsubtraido = parseFloat(informaçao)-parseFloat(preçofinal).value;
+
+
+            
+ document.getElementById("resposta1").innerHTML = (  " O resultado do valor com Desconto e " + "<h1>"+  preçofinal+"</h1>");
+            
+ document.getElementById("valorsub").innerHTML = ( "o valor foi subtraido por " + (informaçao-preçofinal)  );
+ 
+     
+
+ 
+}  
+
+
+
+        </script>
+        
+        <body style=" background-color: purple; color: orange;" >
+            
+            
+        
+           <main style=" padding:10%;margin: 10px;text-align: center; border: 1px solid black;">
+               
+            
+            
+            
+            
+        <form class="interface1">
+            
+            <div class="tpreço">
+        
+        <h2>
+            Valor do Produto: 
+        </h2>
+        
+            <hr>    
+                
+        </div>
+        
+        
+        <input  style="padding: 1px; font-size: 20px; text-size: 20px " type="number" id="campo1" placeholder="Digite Aqui o Primeiro Numero">
+        
+         <hr>
+            
+        
+            
+       <h7>%</h7>
+        
+           <br> 
+            
+        
+        <input  type="number" id="desc1" placeholder="Digite aqui o Segundo Numero" >
+        
+         <hr>
+            
+            
+        
+        </form>
+            
+            
+            <button style="padding: 20px" type="button" class="btn btn-warning"  id="botao1" onclick="caucular()" title="Clique para Caucular " >Caucular</button>
+        
+      
+        
+        
+        
+           <form class="interface1">
+        <hr>
+        
+        <div class="vsubtraido" id="valorsub">
+               
+               <h1> ...</h1>              
+            </div>
+            
+        
+        <hr>
+            
+         <div class="campoderesp1"> 
+             
+      <div id="resposta1" class="alert alert-warning" role="alert"> A simple warning alert—check it out! </div>
+        
+        </div>
+        
+        
+            
+                       
+               
+               
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+               
+               
+        
+        </form>
+        
+               
+          </main>    
+               
+               
+               
+               
+    </body>
+</html>
