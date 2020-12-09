@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aplicação da pagina </title>
+
+    <!-- Include eel.js - note this file doesn't exist in the 'web' directory -->
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript">
+        /*
+                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                */
+
+
+        // Expose esta função para o Python
+        eel.expose(say_hello_js); // Expose da função para o Python
+        function say_hello_js(x) {
+
+        }
+
+        /*Função para o envio de mensagem para o python*/
+        function enviar_python(info) {
+            var mensagem = document.getElementById('mensagem-py').value;
+
+
+            var info = say_hello_js("javascript");
+            eel.say_hello_py(mensagem); // Chamada da função do Python 
+
+            var datarequisicao = 'Horario de envio de Dados:' + new Date();
+            console.log(datarequisicao.toString())
+        }
+    </script>
+</head>
+
+
+
+<body>
+    <h1 id="call-py"></h1>
+
+    <input id="mensagem-py" placeholder="Informe a Mensagem a ser enviada para o python: ">
+    <button onclick="enviar_python()">Enviar para python</button>
+</body>
+
+</html>

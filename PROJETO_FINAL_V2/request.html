@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function() {
+            $.ajax({
+                url: 'https://viacep.com.br/ws/01001000/json/',
+                type: 'GET',
+                data: {
+                    format: 'json'
+                },
+                success: function(response) {
+                    $("#field1").text(response.field1);
+                },
+                error: function() {
+                    $('#errors').text("There was an error processing your request. Please try again.");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <button>Send an HTTP GET request</button>
+
+</body>
+
+</html>

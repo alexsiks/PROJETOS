@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Intranet de dados do Sensor</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Incluindo uma folha de estilo css externa index.css -->
+    <link rel="stylesheet" href="./CSS/index.css">
+    <!-- Incluindo o eel.js -->
+    <script src="eel.js"></script>
+    <!-- Incluindo do ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <script src="./JS/request.js"></script>
+</head>
+
+<body class="corpo">
+    <!-- Incluindo o gerador de grafico chart.js -->
+
+    <div class="container-1">
+        <h1 class="texto_formato">GRAFICO DE SENSORES :</h1>
+        <div class="janela-dados">
+            <!--Gerando na tag canvas da classe -->
+            <canvas class="line-chart"></canvas>
+
+        </div>
+
+    </div>
+
+    <!--textbox  referente a tabela de temperatura-->
+    <div>
+        <div class="janela-temperaturas">
+            <h4 class="texto2">
+                TEMPERATURAS:
+            </h4>
+            <div class="resp-temperatura">
+                <h5 id="dado1" style="color: white;">Resposta de temperaturas</h5>
+            </div>
+        </div>
+
+
+        <!--textbox  referente a tabela de umidade-->
+        <div class="janela-umidades">
+            <h4 class="texto2">
+                UMIDADE:
+            </h4>
+            <div class="resp-umidade">
+                <h5 id="dado2" style="color: white;">Respostas de umidades</h5>
+            </div>
+        </div>
+    </div>
+
+
+    <textarea name="" id="mensagem-py" cols="100" rows="10"></textarea>
+
+
+    <button id="btn-request" onclick="registrar()" type="button" class="btn btn-primary" data-toggle="button" autocomplete="off">Registrar analise</button>
+
+    <button id="btn-request" onclick="requisicao()" type="button" class="btn btn-primary" data-toggle="button" autocomplete="off">Realizar Requisição</button>
+
+    <script type="text/javascript">
+        eel.expose(say_hello_js) // Expose da função para o Python
+        function say_hello_js(x) {
+
+            console.log(x)
+
+        }
+        //Função para o envio de mensagem para o python//
+        function registrar() {
+            var mensagem = document.getElementById('mensagem-py').value;
+
+
+
+            eel.out_javascript(mensagem); // Chamada da função do Python 
+
+            var datarequisicao = 'Horario de envio de Dados:' + new Date();
+            console.log(datarequisicao)
+        }
+
+        /*----------------------------Chart.js  flamwework de graficos-------------------------------------------------------------------------------*/
+        var temp = [2, 4, 23, 22, 1000, 24, 7, 14, 12, 40]
+        for (var i = 0; i < temp.length; i++) {
+            temp[i]
+
+            document.getElementById('dado1').innerHTML = (temp)
+
+        }
+
+
+        var umid = [2, 10, 25, 3, 70, 33, 34, 2, 15, 24]
+        for (var i = 0; i < umid.length; i++) {
+            umid[i]
+            document.getElementById('dado2').innerHTML = (umid)
+
+        }
+
+
+        var ctx = document.getElementsByClassName("line-chart");
+        var chartGraph = new Chart(ctx, {
+            type: 'line',
+
+
+            data: {
+                /*loop para a repetição */
+
+                labels: ["1° MEDIÇÃO", "2° MEDIÇÃO", "3° MEDIÇÃO", "4° MEDICAO", "5° MEDIÇÃO", "6° MEDIÇÃO", "7° MEDIÇÃO", "8° MEDIÇÃO", "9° MEDIÇÃO", "10° MEDIÇÃO"],
+                datasets: [{
+
+
+                    label: 'TEMPERATURA',
+                    data: [temp[0], temp[1], temp[2], temp[3], temp[4], temp[5], temp[6], temp[7], temp[8], temp[9]],
+                    borderColor: 'rgba(300, 30, 20,18)',
+                    borderwidth: 6,
+                    backgroundColor: 'transparent',
+
+
+                }, {
+                    label: 'UMIDADE',
+                    data: [umid[0], umid[1], umid[2], umid[3], umid[4], umid[5], umid[6], umid[7], umid[8], umid[9]],
+                    borderColor: 'rgba(77, 166, 253,0.85)',
+                    borderwidth: 6,
+                    backgroundColor: 'transparent',
+
+
+                }]
+
+
+
+            },
+
+
+
+        })
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
