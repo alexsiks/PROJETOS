@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class App {
 
+    private static int registro = 0;
     private static String nomeCompleto = " ";
     private static int idade = 0;
     private static char sexo = ' ';
@@ -16,23 +17,25 @@ public class App {
     private static void InformarDados(Scanner scan) {
         confirmarDados(scan);
 
-        cadastrar(nomeCompleto, sexo, idade);
+        cadastrar(registro, nomeCompleto, sexo, idade);
 
     }
 
     private static void confirmarDados(Scanner scan) {
+        System.out.println("Informe o Registro do do jogador: ");
+        registro = scan.nextInt();
         System.out.println("Informe o Nome Completo: ");
         nomeCompleto = scan.nextLine();
         System.out.println("Informe o Sexo : ");
         sexo = scan.next().charAt(0);
         System.out.println("Informe a Idade: ");
         idade = scan.nextInt();
+
     }
 
-    private static void cadastrar(String nomeCompleto, char sexo, int idade) {
-        int registro = 0;
-        String nome = nomeCompleto;
+    private static void cadastrar(int registro, String nomeCompleto, char sexo, int idade) {
 
-        Jogador jogador = new Jogador(++registro, nome, idade, sexo);
+        Jogador jogador = new Jogador(registro, nomeCompleto, idade, sexo);
     }
+
 }
