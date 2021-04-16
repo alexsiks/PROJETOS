@@ -26,23 +26,23 @@ app.set('view engine', 'handlebars')
 //Rotas
 
 
-app.get('/formulario', function(req, res) {
+app.get('/formulario', function (req, res) {
     res.render('formulario')
 
 
 
 })
 
-app.post('/cadastrar', function(req, res, err) {
+app.post('/cadastrar', function (req, res, err) {
 
     var dado = [req.body.nome, req.body.telefone, req.body.sexo, req.body.idade]
 
     console.log(dado)
-    inserir(dado, resposta)
+    /*inserir(dado, resposta)
 
 
     console.log(resposta)
-
+*/
     console.log('dados enviados com sucesso.')
 
 
@@ -56,7 +56,7 @@ app.post('/cadastrar', function(req, res, err) {
 
 
 // conexão servidor
-app.listen(porta, function(err) {
+app.listen(porta, function (err) {
     if (err) {
         console.log('Erro de conexão.')
     } else {
