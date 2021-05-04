@@ -1,0 +1,10 @@
+c:\users\alexb\source\repos\pratica01\pratica01\bin\Debug\pratica01.exe.config
+c:\users\alexb\source\repos\pratica01\pratica01\bin\Debug\pratica01.exe
+c:\users\alexb\source\repos\pratica01\pratica01\bin\Debug\pratica01.pdb
+c:\users\alexb\source\repos\pratica01\pratica01\obj\Debug\pratica01.csprojAssemblyReference.cache
+c:\users\alexb\source\repos\pratica01\pratica01\obj\Debug\pratica01.Properties.Resources.resources
+c:\users\alexb\source\repos\pratica01\pratica01\obj\Debug\pratica01.csproj.GenerateResource.cache
+c:\users\alexb\source\repos\pratica01\pratica01\obj\Debug\pratica01.csproj.CoreCompileInputs.cache
+c:\users\alexb\source\repos\pratica01\pratica01\obj\Debug\pratica01.exe
+c:\users\alexb\source\repos\pratica01\pratica01\obj\Debug\pratica01.pdb
+C:\Users\alexb\source\repos\pratica01\pratica01\obj\Debug\pratica01.CauculoJuros.resources
