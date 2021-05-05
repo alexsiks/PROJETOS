@@ -31,7 +31,18 @@ namespace pratica01
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            
+            try
+            {
+
+            }
+            catch
+            {
+                if (textBox2.Text == " ")
+                {
+                    MessageBox.Show("O campo 2 não deve ficar vazio.");
+
+                }
+            }
 
         }
         private void label1_Click(object sender, EventArgs e)
@@ -59,20 +70,20 @@ namespace pratica01
         }
 
         private void Somar()
-        {
-
-            
+        {           
 
             try
             {
-                double valor = Convert.ToDouble(textBox1.Text);
-                double taxaJuros = Convert.ToDouble(textBox2.Text);
+                
+                  double valor = Convert.ToDouble(textBox1.Text);
+                textBox1.Text = valor.ToString("n2");
 
-            
+
+                double taxaJuros = Convert.ToDouble(textBox2.Text);
+                textBox1.Text = valor.ToString("n2");
+
                
-                
-                double cauculo = valor+(valor * taxaJuros)/100;
-                
+                double cauculo = valor + (valor * taxaJuros) / 100;
                 textBox3.Text = cauculo.ToString("n2");
 
             }
@@ -86,9 +97,46 @@ namespace pratica01
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
             
-           
-            
+            }
+            catch
+            {
+                if (textBox1.Text == " ")
+                {
+                    MessageBox.Show("O campo 1 não deve ficar vazio.");
+
+                }
+            }
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+
+                double valor = Convert.ToDouble(textBox1.Text);
+                textBox1.Text = valor.ToString("n2");
+
+
+                double taxaJuros = Convert.ToDouble(textBox2.Text);
+                textBox1.Text = valor.ToString("n2");
+
+
+                double cauculo = valor - (valor * taxaJuros) / 100;
+                textBox3.Text = cauculo.ToString("n2");
+
+            }
+            catch
+            {
+                MessageBox.Show("Não foi possivel realizar a Operação.");
+
+
+            }
+
         }
     }
 }
