@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SistemaProtocolo));
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -46,6 +47,7 @@
             // 
             // button1
             // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Location = new System.Drawing.Point(147, 104);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(91, 20);
@@ -76,6 +78,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox1.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.comboBox1.Items.AddRange(new object[] {
             "ELOGIO",
@@ -110,12 +113,13 @@
             this.dataGridView1.Location = new System.Drawing.Point(425, 115);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(522, 177);
+            this.dataGridView1.Size = new System.Drawing.Size(676, 428);
             this.dataGridView1.TabIndex = 5;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(537, 86);
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Location = new System.Drawing.Point(537, 87);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 6;
@@ -143,6 +147,7 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "ABERTO",
@@ -162,6 +167,11 @@
             // 
             // scanear
             // 
+            this.scanear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.scanear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.scanear.FlatAppearance.BorderSize = 2;
+            this.scanear.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.scanear.Image = ((System.Drawing.Image)(resources.GetObject("scanear.Image")));
             this.scanear.Location = new System.Drawing.Point(84, 104);
             this.scanear.Name = "scanear";
             this.scanear.Size = new System.Drawing.Size(57, 20);
@@ -172,6 +182,7 @@
             // 
             // button3
             // 
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.Location = new System.Drawing.Point(244, 104);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(91, 20);
@@ -185,7 +196,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.ClientSize = new System.Drawing.Size(959, 304);
+            this.ClientSize = new System.Drawing.Size(1113, 555);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.scanear);
             this.Controls.Add(this.texto_escanear);

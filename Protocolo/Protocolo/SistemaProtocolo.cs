@@ -95,7 +95,11 @@ namespace Protocolo
 
                     conexao = new MySqlConnection("Server=192.168.100.112;Port=3306;Database=empresa;Uid=programa;Pwd=123;");
 
-                    strSql = $"SELECT id as CODIGO,situacao AS SITUACAO,motivo AS MOTIVO,memorando AS DESCRICAO,dat_registro as DATA_REGISTRO,DAT_ATUALIZACAO AS DATA_ATUALIZACAO FROM PROTOCOLO where id = {textBox2.Text}";
+                    strSql = $"SELECT id as CODIGO,situacao AS SITUACAO,motivo AS MOTIVO,memorando AS DESCRICAO,dat_registro as DATA_REGISTRO,DAT_ATUALIZACAO AS DATA_ATUALIZACAO FROM PROTOCOLO where" +
+                        $" id like '%{textBox2.Text}%' ||" +
+                        $"situacao like '%{textBox2.Text}%' ||" +
+                        $"motivo like '%{textBox2.Text}%' ||" +
+                        $"dat_registro like '%{textBox2.Text}%'";
 
                     da = new MySqlDataAdapter(strSql, conexao);
 
@@ -120,12 +124,7 @@ namespace Protocolo
 
 
         }
-
-        private void SistemaProtocolo_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void scanear_Click(object sender, EventArgs e)
         {
             try
@@ -195,6 +194,11 @@ namespace Protocolo
             {
                 conexao.Close();
             }
+
+        }
+
+        private void SistemaProtocolo_Load(object sender, EventArgs e)
+        {
 
         }
     }
